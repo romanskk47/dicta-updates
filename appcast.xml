@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
     <title>Dicta Updates</title>
-    <link>https://piotrromanski.github.io/dicta-updates/appcast.xml</link>
+    <link>https://romanskk47.github.io/dicta-updates/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
 
@@ -14,11 +14,11 @@
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <pubDate>Sat, 18 Jan 2026 12:00:00 +0000</pubDate>
       <enclosure
-        url="https://github.com/piotrromanski/Dicta/releases/download/v1.0.0/Dicta-1.0.0.dmg"
+        url="https://github.com/romanskk47/Dicta/releases/download/v1.0.0/Dicta-1.0.0.dmg"
         sparkle:edSignature="UZUPELNIJ_PO_PODPISANIU_DMG"
         length="50000000"
         type="application/octet-stream"/>
-      <sparkle:releaseNotesLink>https://piotrromanski.github.io/dicta-updates/release-notes/1.0.0.html</sparkle:releaseNotesLink>
+      <sparkle:releaseNotesLink>https://romanskk47.github.io/dicta-updates/release-notes/1.0.0.html</sparkle:releaseNotesLink>
     </item>
 
   </channel>
