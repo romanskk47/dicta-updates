@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 16px; }
+    h2 { color: #333; }
+    ul { padding-left: 20px; }
+    li { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <h2>Dicta 1.1.0</h2>
+
+  <h3>New Features</h3>
+  <ul>
+    <li>File transcription - import audio/video files (MP3, WAV, M4A, MP4, MKV, and more)</li>
+    <li>URL transcription - paste YouTube, Vimeo, or other video links to transcribe</li>
+    <li>FFmpeg + yt-dlp integration for extended format support</li>
+  </ul>
+
+  <h3>Improvements</h3>
+  <ul>
+    <li>Fixed YouTube download issues (403 errors) for certain videos</li>
+    <li>Skip silent audio chunks to prevent Whisper hallucinations</li>
+    <li>Improved permission handling and error messages</li>
+    <li>Better progress reporting for file/URL transcription</li>
+  </ul>
+
+  <h3>Technical</h3>
+  <ul>
+    <li>Binary auto-download (ffmpeg, yt-dlp) on first use</li>
+    <li>Max 4 hours per file</li>
+  </ul>
+</body>
+</html>

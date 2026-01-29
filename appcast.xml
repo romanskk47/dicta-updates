@@ -6,7 +6,22 @@
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
 
-    <!-- Pierwsza wersja - uzupełnij po release -->
+    <!-- v1.1.0 - YouTube fix, permission system improvements -->
+    <item>
+      <title>Version 1.1.0</title>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Thu, 29 Jan 2026 18:32:20 +0100</pubDate>
+      <enclosure
+        url="https://github.com/romanskk47/dicta-updates/releases/download/v1.1.0/Dicta-1.1.0.dmg"
+        sparkle:edSignature="J+TZI4ccjU7sQeVi/kge4ygWs5fLCV3uQNAv8uRNOjEXElBiR2EdKEwtvGZeq9E4H46hXrZ3N0qeujVDPEGOBg=="
+        length="6562357"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://romanskk47.github.io/dicta-updates/release-notes/1.1.0.html</sparkle:releaseNotesLink>
+    </item>
+
+    <!-- v1.0.0 - Initial release (placeholder) -->
     <item>
       <title>Version 1.0.0</title>
       <sparkle:version>1</sparkle:version>
