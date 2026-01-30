@@ -6,6 +6,21 @@
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
 
+    <!-- v1.1.2 - History recovery from transcription files -->
+    <item>
+      <title>Version 1.1.2</title>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Fri, 30 Jan 2026 17:52:31 +0100</pubDate>
+      <enclosure
+        url="https://github.com/romanskk47/dicta-updates/releases/download/v1.1.2/Dicta-1.1.2.dmg"
+        sparkle:edSignature="rhFcbyc/PncTJxyWlCRVw6ggyiNem0BF2G9/ISqliG9uvz2rK35gIo3nbKfLae+NXLYbFq5ArQ0rqe3nrEYzAw=="
+        length="6606469"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://romanskk47.github.io/dicta-updates/release-notes/1.1.2.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.1.1 - UI polish, permission recovery improvements -->
     <item>
       <title>Version 1.1.1</title>
