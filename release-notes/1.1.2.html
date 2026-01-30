@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicta 1.1.2 Release Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cyan: #5DDFDF;
+      --azure: #3B82F6;
+      --coral: #EB534E;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFC;
+      --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0;
+      --gray-500: #64748B;
+      --gray-600: #475569;
+      --gray-900: #0F172A;
+      --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+      --radius-lg: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--gray-900);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 32px 24px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-weight: 400;
+      font-size: 32px;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .version-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: linear-gradient(135deg, var(--cyan) 0%, var(--azure) 100%);
+      color: white;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--gray-900);
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin-bottom: 12px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: var(--gray-600);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-new {
+      background: rgba(93, 223, 223, 0.15);
+      color: #0d9488;
+    }
+
+    .badge-fix {
+      background: rgba(235, 83, 78, 0.12);
+      color: var(--coral);
+    }
+
+    .badge-improved {
+      background: rgba(59, 130, 246, 0.12);
+      color: var(--azure);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: var(--gray-600);
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--azure);
+      opacity: 0.7;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid var(--gray-200);
+      font-size: 13px;
+      color: var(--gray-500);
+    }
+
+    .footer a {
+      color: var(--gray-500);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dicta 1.1.2</h1>
+  <span class="version-badge">January 2026</span>
+
+  <div class="section">
+    <h2 class="section-title">Highlights</h2>
+
+    <div class="card">
+      <div class="card-title">
+        <span class="badge badge-improved">Improved</span>
+        Permission recovery after updates
+      </div>
+      <div class="card-description">
+        Clearer permission banners and quick access to Settings, including Input Monitoring.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span class="badge badge-improved">Improved</span>
+        Update fallback
+      </div>
+      <div class="card-description">
+        Manual DMG download link added when auto-update fails.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span class="badge badge-fix">Fix</span>
+        UI stability
+      </div>
+      <div class="card-description">
+        Status header and popover no longer jump between states.
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Small improvements</h2>
+
+    <div class="card">
+      <div class="card-title">
+        <span class="badge badge-improved">Improved</span>
+        Setup and status messages
+      </div>
+      <div class="card-description">
+        Shorter, clearer copy across setup and error states.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span class="badge badge-improved">Improved</span>
+        Quick links for permissions
+      </div>
+      <div class="card-description">
+        Status opens Settings when permissions are missing, plus direct Privacy link in banners.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span class="badge badge-improved">Improved</span>
+        Typography consistency
+      </div>
+      <div class="card-description">
+        More consistent header and banner typography for better visual balance.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://appdicta.com">appdicta.com</a>
+  </div>
+</body>
+</html>
