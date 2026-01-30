@@ -6,6 +6,21 @@
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
 
+    <!-- v1.1.1 - UI polish, permission recovery improvements -->
+    <item>
+      <title>Version 1.1.1</title>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Fri, 30 Jan 2026 16:53:14 +0100</pubDate>
+      <enclosure
+        url="https://github.com/romanskk47/dicta-updates/releases/download/v1.1.1/Dicta-1.1.1.dmg"
+        sparkle:edSignature="qTf8f/gXAyEZCHjHiL4vJDtT5AmBjGCtw0uHi5OZzARUa2Z7krXmvqgn/ycHR1RSAvNd6TRae/q/Dau1W4k0Cg=="
+        length="6562351"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://romanskk47.github.io/dicta-updates/release-notes/1.1.1.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.1.0 - YouTube fix, permission system improvements -->
     <item>
       <title>Version 1.1.0</title>
