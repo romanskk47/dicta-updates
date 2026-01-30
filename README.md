@@ -1,5 +1,7 @@
 # Dicta Updates
 
+**Scope:** This repo only hosts Sparkle updates (appcast + DMG releases) for the non‑App Store build.
+
 Sparkle appcast feed for [Dicta](https://github.com/piotrromanski/Dicta) auto-updates.
 
 ## Setup
