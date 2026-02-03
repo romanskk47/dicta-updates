@@ -6,6 +6,21 @@
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
 
+    <!-- v1.2.1 - Accessibility, auto-update preferences, UX improvements -->
+    <item>
+      <title>Version 1.2.1</title>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 03 Feb 2026 15:32:50 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.2.1/Dicta-1.2.1.dmg"
+        sparkle:edSignature="y1JCdddQZL9SUuR9I/iZDyYmBlRMq7RU0ZyNvxGPzm6FlSIO3chx+dM4Vggiudiyesql6cLnuWMmSinkWv47CQ=="
+        length="6739175"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.2.1.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.2.0 - License validation, history improvements, email activation -->
     <item>
       <title>Version 1.2.0</title>
