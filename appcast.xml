@@ -6,17 +6,32 @@
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
 
-    <!-- v1.2.1 - Accessibility, auto-update preferences, UX improvements -->
+    <!-- v1.2.2 (build 10) - Auto language detection by default -->
+    <item>
+      <title>Version 1.2.2</title>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Wed, 04 Feb 2026 17:59:34 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.2.2/Dicta-1.2.2.dmg"
+        sparkle:edSignature="kfXvLdBGC3JTBQdf0l0NZbclGrnLUdh3bl6jVk6dOQwI9ZlYpRZE0OBdL7T021h2ijbJRaN/zDDGyLWvj2G9Aw=="
+        length="6739978"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.2.2.html</sparkle:releaseNotesLink>
+    </item>
+
+    <!-- v1.2.1 (build 9) - Hotkey stability fix -->
     <item>
       <title>Version 1.2.1</title>
-      <sparkle:version>8</sparkle:version>
+      <sparkle:version>9</sparkle:version>
       <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <pubDate>Tue, 03 Feb 2026 15:32:50 +0100</pubDate>
+      <pubDate>Tue, 04 Feb 2026 13:15:00 +0100</pubDate>
       <enclosure
         url="https://downloads.appdicta.com/dicta/releases/1.2.1/Dicta-1.2.1.dmg"
-        sparkle:edSignature="y1JCdddQZL9SUuR9I/iZDyYmBlRMq7RU0ZyNvxGPzm6FlSIO3chx+dM4Vggiudiyesql6cLnuWMmSinkWv47CQ=="
-        length="6739175"
+        sparkle:edSignature="DuZnfCPcEMwE2trZTf62BWJxKOpK3K6evsI7SqFY2pKZ4Gi0FovipoI28asFVM0iutQMDet23Jxguol+7XtcBQ=="
+        length="6739911"
         type="application/octet-stream"/>
       <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.2.1.html</sparkle:releaseNotesLink>
     </item>
