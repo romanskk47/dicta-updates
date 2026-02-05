@@ -6,6 +6,36 @@
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
 
+    <!-- v1.2.4 (build 12) - Onboarding wizard, Sparkle safety, permissions UX -->
+    <item>
+      <title>Version 1.2.4</title>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Thu, 05 Feb 2026 16:43:56 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.2.4/Dicta-1.2.4.dmg"
+        sparkle:edSignature="sHPl1j8l7RojDLQVL5nMeJYn/X1SnUN8LIoRQQIKYt12TYhJCMVj2/pDxkq14/B4IZwGBsUmXHz2xBou6oGyDg=="
+        length="6930260"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.2.4.html</sparkle:releaseNotesLink>
+    </item>
+
+    <!-- v1.2.3 (build 11) - Fix auto language detection -->
+    <item>
+      <title>Version 1.2.3</title>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Thu, 05 Feb 2026 10:03:12 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.2.3/Dicta-1.2.3.dmg"
+        sparkle:edSignature="+Y0Pcfm6KRMLSn7kDtXEJBVISrGgPuFbGiLaFMN2joX5uPMoAseev0y+eHsBdzdxmCu84x0E+vqh52/1AqNCBA=="
+        length="6739854"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.2.3.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.2.2 (build 10) - Auto language detection by default -->
     <item>
       <title>Version 1.2.2</title>
