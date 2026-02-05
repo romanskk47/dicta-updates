@@ -11,6 +11,9 @@ This repo hosts the **Sparkle auto-update feed** for the DMG version of Dicta. W
 ```
 dicta-updates/
 ├── appcast.xml           # Sparkle feed — lists all versions
+├── update-config.json    # Update channels + override/beta config for Dicta app
+├── beta/appcast.xml      # Beta channel feed
+├── override/appcast.xml  # Override channel feed
 ├── release-notes/        # HTML files shown in update dialog
 │   ├── 1.1.0.html
 │   ├── 1.1.1.html
@@ -105,6 +108,17 @@ After each release, copy the newest DMG to this path in R2.
 ```
 
 New items go at the **TOP** of the channel (newest first).
+
+## update-config.json
+
+Dicta reads `update-config.json` to control update channels and override behavior.
+
+Key fields:
+- `prodFeedURL`, `betaFeedURL`, `overrideFeedURL`
+- `overrideActive` + `overrideVersion`
+- `prodReleaseVersion` (shown in Settings)
+- `betaDomains` (emails that alternate beta/prod)
+- `checkIntervalMinSeconds` / `checkIntervalMaxSeconds` (randomized schedule)
 
 ## Quick Commands
 

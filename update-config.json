@@ -1,0 +1,13 @@
+{
+  "prodFeedURL": "https://downloads.appdicta.com/dicta/appcast.xml",
+  "betaFeedURL": "https://downloads.appdicta.com/dicta/beta/appcast.xml",
+  "overrideFeedURL": "https://downloads.appdicta.com/dicta/override/appcast.xml",
+  "overrideActive": false,
+  "overrideVersion": "",
+  "prodReleaseVersion": "1.2.4",
+  "betaDomains": [
+    "appdicta.com"
+  ],
+  "checkIntervalMinSeconds": 1800,
+  "checkIntervalMaxSeconds": 7200
+}
