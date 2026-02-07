@@ -5,6 +5,21 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.2.7 (build 15) - settings stability, startup freeze fix, offer simplification -->
+    <item>
+      <title>Version 1.2.7</title>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>1.2.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Sat, 07 Feb 2026 17:27:22 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.2.7/Dicta-1.2.7.dmg"
+        sparkle:edSignature="aJXu6MO5kgubD6lY4Eu2Bkt+pXj6XADlRxxoJCNTmMGYQF1l8rS7G928wLzFkUBv/mQ3PXQ/cDKEVP2k4pUzDg=="
+        length="7108752"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.2.7.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.2.6 (build 14) - DMG packaging compatibility -->
     <item>
       <title>Version 1.2.6</title>
