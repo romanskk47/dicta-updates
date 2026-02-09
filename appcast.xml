@@ -5,6 +5,21 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.3.3 (build 21) - long-form tail transcription fixes -->
+    <item>
+      <title>Version 1.3.3</title>
+      <sparkle:version>21</sparkle:version>
+      <sparkle:shortVersionString>1.3.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Mon, 09 Feb 2026 15:47:00 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.3.3/Dicta-1.3.3.dmg"
+        sparkle:edSignature="6ONzKRlA9Y8AbogcyUF+WNIY5ULttXFHnDyF8/n9Z9iqCtaFph4fxuasCn8AQ782YucGFsU2sji6sE+KvynhDw=="
+        length="7254711"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.3.3.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.3.2 (build 20) - Settings popover fix + layout polish -->
     <item>
       <title>Version 1.3.2</title>

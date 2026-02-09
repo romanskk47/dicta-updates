@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 16px; }
+    h2 { color: #333; }
+    ul { padding-left: 20px; }
+    li { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <h2>Dicta 1.3.3</h2>
+  <h3>Changed</h3>
+  <ul>
+    <li><strong>Whisper long-form defaults</strong> — Background streaming now disables cross-chunk prompt conditioning by default to reduce premature endings on long dictations.</li>
+  </ul>
+  <h3>Fixed</h3>
+  <ul>
+    <li><strong>Transcription tail clipping</strong> — Chunk merge now falls back to text merge when word timestamps are incomplete, preventing dropped endings.</li>
+    <li><strong>Low-volume final tail loss</strong> — Final chunk is now processed even when RMS is below silence threshold; silence skipping remains for non-final chunks.</li>
+  </ul>
+</body>
+</html>
