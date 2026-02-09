@@ -2,7 +2,8 @@
 
 ## What This Is
 
-This repo hosts the **Sparkle auto-update feed** for the DMG version of Dicta. When users have the app installed, it checks `appcast.xml` for new versions.
+This repo stores release metadata for the DMG channel of Dicta.
+Dicta clients fetch these files from Cloudflare R2.
 
 **Hosted at:** `https://downloads.appdicta.com/dicta/`
 
@@ -10,143 +11,67 @@ This repo hosts the **Sparkle auto-update feed** for the DMG version of Dicta. W
 
 ```
 dicta-updates/
-├── appcast.xml           # Sparkle feed — lists all versions
-├── update-config.json    # Update channels + override/beta config for Dicta app
+├── appcast.xml           # Production Sparkle feed (newest first)
+├── update-config.json    # Update channel config consumed by Dicta
 ├── beta/appcast.xml      # Beta channel feed
-├── override/appcast.xml  # Override channel feed
-├── release-notes/        # HTML files shown in update dialog
-│   ├── 1.1.0.html
-│   ├── 1.1.1.html
-│   └── 1.2.0.html
+├── override/appcast.xml  # Temporary override feed
+├── release-notes/        # HTML notes shown in Sparkle update dialog
 └── README.md
 ```
 
-## How Sparkle Works
+## Current State (2026-02-08)
+
+- Latest production release in appcast: `1.2.8` (`build 17`)
+- `update-config.json` `prodReleaseVersion`: `1.2.8`
+- R2 paths for release assets follow: `releases/X.Y.Z/Dicta-X.Y.Z.dmg`
+
+## How Sparkle Uses This Repo
 
 ```
-┌─────────────────┐     GET appcast.xml      ┌──────────────────┐
-│   Dicta.app     │ ──────────────────────▶  │  Cloudflare R2   │
-│  (user's Mac)   │                          │  (this repo)     │
-└─────────────────┘                          └──────────────────┘
-        │                                            │
-        │  Compares CFBundleVersion                  │
-        │  with <sparkle:version>                    │
-        ▼                                            │
-┌─────────────────┐                                  │
-│ Update dialog   │ ◀──── release-notes/X.Y.Z.html ──┘
-│ "New version!"  │
-└─────────────────┘
-        │
-        │  User clicks "Install"
-        ▼
-┌─────────────────┐
-│ Downloads DMG   │ ◀──── from <enclosure url="...">
-└─────────────────┘
-```
-
-## appcast.xml Structure
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-  <channel>
-    <title>Dicta Updates</title>
-    <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
-
-    <!-- NEWEST VERSION FIRST -->
-    <item>
-      <title>Version 1.2.0</title>
-      <pubDate>Fri, 31 Jan 2026 12:00:00 +0000</pubDate>
-      <sparkle:version>7</sparkle:version>           <!-- CFBundleVersion (build) -->
-      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>  <!-- User-visible -->
-      <sparkle:releaseNotesLink>
-        https://downloads.appdicta.com/dicta/release-notes/1.2.0.html
-      </sparkle:releaseNotesLink>
-      <enclosure
-        url="https://downloads.appdicta.com/dicta/releases/1.2.0/Dicta-1.2.0.dmg"
-        type="application/octet-stream"
-        sparkle:edSignature="BASE64_SIGNATURE_HERE"
-        length="12345678"
-      />
-    </item>
-
-    <!-- Older versions below... -->
-  </channel>
-</rss>
+Dicta.app -> GET appcast.xml -> compare build/version -> show release notes -> download enclosure DMG
 ```
 
 ## Adding a New Release
 
-**Full workflow:** Use `/release-update` skill in the Dicta project (`/Users/piotrromanski/Developer/Dicta`).
+Use `/release-update` in `/Users/piotrromanski/Developer/Dicta`.
 
-The skill handles: version bump → build → notarize → sign → upload → appcast update → release notes.
+That workflow handles:
+- build + notarization + Sparkle signature
+- appcast insertion (top item)
+- release notes template/update
+- `update-config.json` `prodReleaseVersion` sync
 
-### Quick Reference: appcast.xml item format
+### Required conventions
 
-### Latest DMG Alias (required)
-Maintain a latest alias at:
-`https://downloads.appdicta.com/dicta/Dicta.dmg`
-
-After each release, copy the newest DMG to this path in R2.
-
-```xml
-<item>
-  <title>Version X.Y.Z</title>
-  <pubDate>Fri, 31 Jan 2026 12:00:00 +0000</pubDate>
-  <sparkle:version>BUILD_NUMBER</sparkle:version>
-  <sparkle:shortVersionString>X.Y.Z</sparkle:shortVersionString>
-  <sparkle:releaseNotesLink>
-    https://downloads.appdicta.com/dicta/release-notes/X.Y.Z.html
-  </sparkle:releaseNotesLink>
-  <enclosure
-    url="https://downloads.appdicta.com/dicta/releases/X.Y.Z/Dicta-X.Y.Z.dmg"
-    type="application/octet-stream"
-    sparkle:edSignature="FROM_SIGN_UPDATE"
-    length="FILE_SIZE_BYTES"
-  />
-</item>
-```
-
-New items go at the **TOP** of the channel (newest first).
+- New appcast item goes at the top.
+- `sparkle:version` must match `CFBundleVersion`.
+- `sparkle:shortVersionString` must match `CFBundleShortVersionString`.
+- Keep latest alias in R2: `https://downloads.appdicta.com/dicta/Dicta.dmg`.
 
 ## update-config.json
 
-Dicta reads `update-config.json` to control update channels and override behavior.
-
 Key fields:
 - `prodFeedURL`, `betaFeedURL`, `overrideFeedURL`
-- `overrideActive` + `overrideVersion`
-- `prodReleaseVersion` (shown in Settings)
-- `betaDomains` (emails that alternate beta/prod)
-- `checkIntervalMinSeconds` / `checkIntervalMaxSeconds` (randomized schedule)
+- `overrideActive`, `overrideVersion`
+- `prodReleaseVersion`
+- `betaDomains`
+- `checkIntervalMinSeconds`, `checkIntervalMaxSeconds`
 
 ## Quick Commands
 
 ```bash
-# Generate RFC 822 date for pubDate:
+# RFC 822 date for pubDate
 date -u "+%a, %d %b %Y %H:%M:%S +0000"
 
-# Verify appcast after upload:
-curl -s https://downloads.appdicta.com/dicta/appcast.xml | head -30
+# Validate production appcast header
+curl -s https://downloads.appdicta.com/dicta/appcast.xml | head -40
 ```
 
 ## Related Projects
 
-- **Dicta app:** `/Users/piotrromanski/Developer/Dicta`
-  - Build scripts: `scripts/notarize.sh`, `scripts/create-dmg.sh`
-  - Version in: `Config/Info.plist`
-  - Keep DMG and App Store versions/builds in sync: `Config/Info.plist` ↔ `Config/Info-AppStore.plist`
-
-- **Website:** `/Users/piotrromanski/Developer/appdicta.com`
-  - DMG download link on /thanks page
-
-- **Master context:** `/Users/piotrromanski/Developer/CLAUDE.md`
-
-## Hosting
-
-- **Provider:** Cloudflare R2
-- **Bucket URL:** `https://downloads.appdicta.com/dicta/`
-- **Public access:** Yes (for Sparkle to fetch)
+- Dicta app: `/Users/piotrromanski/Developer/Dicta`
+- Website: `/Users/piotrromanski/Developer/appdicta.com`
+- Ecosystem context: `/Users/piotrromanski/Developer/CLAUDE.md`
 
 ## Owner
 
