@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 16px; }
+    h2 { color: #333; }
+    h3 { color: #555; margin-top: 16px; }
+    ul { padding-left: 20px; }
+    li { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <h2>Dicta 1.4.1</h2>
+  <h3>Fixed</h3>
+  <ul>
+    <li>Audio device buffer allocation that could misdetect input channels</li>
+    <li>Stale device IDs after Continuity microphone reconnects</li>
+  </ul>
+  <h3>Improved</h3>
+  <ul>
+    <li>Weak signal guidance now suggests switching to iPhone mic when detected</li>
+    <li>Automatic fallback to system default if preferred microphone fails</li>
+    <li>Input format validation before starting audio engine</li>
+    <li>Better error logging in audio pipeline</li>
+  </ul>
+  <h3>Changed</h3>
+  <ul>
+    <li>Import field now shows a privacy note about local transcription</li>
+  </ul>
+</body>
+</html>
