@@ -5,6 +5,51 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.4.5 (build 27) - Import field UX overhaul, CAF format support -->
+    <item>
+      <title>Version 1.4.5</title>
+      <sparkle:version>27</sparkle:version>
+      <sparkle:shortVersionString>1.4.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Thu, 12 Feb 2026 10:32:19 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.4.5/Dicta-1.4.5.dmg"
+        sparkle:edSignature="5N0e9YhA0K/D9UPHnUjxQNwxsUWbGyrA0icVh8lhlEfiJIllz8KdSlwO1tRZYfF1x8242TobElAncDtRFwEaBg=="
+        length="7370422"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.4.5.html</sparkle:releaseNotesLink>
+    </item>
+
+    <!-- v1.4.4 (build 26) - History browser polish, activation code fix, App Store copy -->
+    <item>
+      <title>Version 1.4.4</title>
+      <sparkle:version>26</sparkle:version>
+      <sparkle:shortVersionString>1.4.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Wed, 11 Feb 2026 22:51:04 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.4.4/Dicta-1.4.4.dmg"
+        sparkle:edSignature="MICiaDKN0XEhoDE3ibpQ/cyAz7erXZQLRnLVbACA0A7f8BoUDjLGWuvY2iA/EVWV7bsxQnnvmaFuZWQ0m5mKCQ=="
+        length="7294041"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.4.4.html</sparkle:releaseNotesLink>
+    </item>
+
+    <!-- v1.4.3 (build 25) - Standalone window, glass effects, Settings refactor -->
+    <item>
+      <title>Version 1.4.3</title>
+      <sparkle:version>25</sparkle:version>
+      <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Wed, 11 Feb 2026 17:14:14 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.4.3/Dicta-1.4.3.dmg"
+        sparkle:edSignature="gFo/rHHjXHl2qQdPOX75DriRuZVG1wIRQH7zKVg2CW7/d7xcujGesdBjSRLJOPmEK5udARUrcsufbL1luw+1AQ=="
+        length="7292991"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.4.3.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.4.2 (build 24) - Smarter update relaunch + launch background check -->
     <item>
       <title>Version 1.4.2</title>
