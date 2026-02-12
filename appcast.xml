@@ -5,6 +5,21 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.4.6 (build 28) - Universal binary (Intel + Apple Silicon), drag & drop from History, file access recovery -->
+    <item>
+      <title>Version 1.4.6</title>
+      <sparkle:version>28</sparkle:version>
+      <sparkle:shortVersionString>1.4.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Thu, 12 Feb 2026 16:25:33 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.4.6/Dicta-1.4.6.dmg"
+        sparkle:edSignature="jgS7WfVK1Qn0tc3F4AkFhlTZH8mJzleFkZjFYzk5MMCTcgEsGc7cfrTLgrn4HwFlnvQX7mhBPsGdAuLBrWeiDw=="
+        length="10390572"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.4.6.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.4.5 (build 27) - Import field UX overhaul, CAF format support -->
     <item>
       <title>Version 1.4.5</title>
