@@ -5,6 +5,21 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.4.7 (build 29) - Fix Intel crash on stop recording, improved insertion error UX -->
+    <item>
+      <title>Version 1.4.7</title>
+      <sparkle:version>29</sparkle:version>
+      <sparkle:shortVersionString>1.4.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Fri, 13 Feb 2026 08:19:58 +0000</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.4.7/Dicta-1.4.7.dmg"
+        sparkle:edSignature="ljn8VETZBhcU09FNN+voxrtElWbBaGUTJKe4lYTeuo67df+sTXqkuK/Ws2SewNalJZpc1WHcrnrBZdst6oroBA=="
+        length="10452781"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.4.7.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.4.6 (build 28) - Universal binary (Intel + Apple Silicon), drag & drop from History, file access recovery -->
     <item>
       <title>Version 1.4.6</title>
