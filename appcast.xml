@@ -5,6 +5,21 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.4.8 (build 30) - Update pill in main UI, History multi-select, Sparkle diagnostics -->
+    <item>
+      <title>Version 1.4.8</title>
+      <sparkle:version>30</sparkle:version>
+      <sparkle:shortVersionString>1.4.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Fri, 13 Feb 2026 18:56:16 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.4.8/Dicta-1.4.8.dmg"
+        sparkle:edSignature="GL7869FHxl0TJGVIBcYJ5EMq9TIjieCFlrxrCzz872Z7dSKp65VkeEXkGrzV7oOpIQzCzLAEmEH3EnYBH1OLAQ=="
+        length="10897229"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.4.8.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.4.7 (build 29) - Fix Intel crash on stop recording, improved insertion error UX -->
     <item>
       <title>Version 1.4.7</title>
