@@ -19,10 +19,10 @@ dicta-updates/
 └── README.md
 ```
 
-## Current State (2026-02-13)
+## Current State (2026-02-15)
 
-- Latest production release in appcast: `1.4.8` (`build 30`)
-- `update-config.json` `prodReleaseVersion`: `1.4.8`
+- Latest production release in appcast: `1.5.1` (`build 32`)
+- `update-config.json` `prodReleaseVersion`: `1.5.1`
 - R2 paths for release assets follow: `releases/X.Y.Z/Dicta-X.Y.Z.dmg`
 
 ## How Sparkle Uses This Repo

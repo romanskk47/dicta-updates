@@ -5,6 +5,36 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.5.1 (build 32) - Subscription polling, auto-submit OTP, jargon-free onboarding, feature discovery -->
+    <item>
+      <title>Version 1.5.1</title>
+      <sparkle:version>32</sparkle:version>
+      <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Sun, 15 Feb 2026 00:31:57 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.5.1/Dicta-1.5.1.dmg"
+        sparkle:edSignature="YvIquN9/oegMFq4X7nkpi2arWYKBOG1DHJ/Zc7v5nTOXN1MoLz4g6t5wzYhDWmca0dn4aSEjP5crII/CcF32CQ=="
+        length="11188872"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.5.1.html</sparkle:releaseNotesLink>
+    </item>
+
+    <!-- v1.5.0 (build 31) - Email-first trial onboarding, architecture simplification, payment issue banner -->
+    <item>
+      <title>Version 1.5.0</title>
+      <sparkle:version>31</sparkle:version>
+      <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Sat, 14 Feb 2026 00:45:35 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.5.0/Dicta-1.5.0.dmg"
+        sparkle:edSignature="yW2H77rnNE3yglrg+zz9HzD04qyU8hskBM59xtCPpkRXGlpTw8xnq1Rl0O+Qiysp0O4wEuDMII/9fIQtJQKdBw=="
+        length="11004962"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.5.0.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.4.8 (build 30) - Update pill in main UI, History multi-select, Sparkle diagnostics -->
     <item>
       <title>Version 1.4.8</title>
