@@ -4,7 +4,7 @@
   "overrideFeedURL": "https://downloads.appdicta.com/dicta/override/appcast.xml",
   "overrideActive": false,
   "overrideVersion": "",
-  "prodReleaseVersion": "1.5.5",
+  "prodReleaseVersion": "1.5.6",
   "betaDomains": [
     "appdicta.com"
   ],
