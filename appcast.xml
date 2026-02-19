@@ -5,6 +5,21 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.5.9 (build 40) - Hotfix: remove compressionRatioThreshold=1.35 override that caused 5 WhisperKit fallbacks on legitimate speech (20-48s for short recordings) -->
+    <item>
+      <title>Version 1.5.9</title>
+      <sparkle:version>40</sparkle:version>
+      <sparkle:shortVersionString>1.5.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Thu, 19 Feb 2026 11:52:13 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.5.9/Dicta-1.5.9.dmg"
+        sparkle:edSignature="8pPRNXQ/O2IOHtG1glPxpvkvnzsrdQxRm1weuIulQi3lQGNptACk3plVbsxhyKbfxqZOTnDOITN9FkAiR4PODg=="
+        length="11345392"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.5.9.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.5.8 (build 39) - Transcription speed: replace audio tiling with trailing silence (3-5x faster for short clips); login item focus fix; onboarding routing fixes -->
     <item>
       <title>Version 1.5.8</title>
