@@ -5,6 +5,21 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.5.8 (build 39) - Transcription speed: replace audio tiling with trailing silence (3-5x faster for short clips); login item focus fix; onboarding routing fixes -->
+    <item>
+      <title>Version 1.5.8</title>
+      <sparkle:version>39</sparkle:version>
+      <sparkle:shortVersionString>1.5.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Thu, 19 Feb 2026 11:08:57 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.5.8/Dicta-1.5.8.dmg"
+        sparkle:edSignature="vdDRTsXiB/ZlTY13iZcKtCwCILfVtDEfTyZrVENmzE8sdXsxbU1xM7xObwSWU3NopJs2E1L056MaODjKqzr2BQ=="
+        length="11338060"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.5.8.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.5.7 (build 38) - Transcription tail fix: audio tiling, silence-based chunk splitting, compressionRatioThreshold -->
     <item>
       <title>Version 1.5.7</title>
