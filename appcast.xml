@@ -5,6 +5,21 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.5.11 (build 42) - QTA format support; fix onboarding mic monitoring race; defensive recorder cleanup -->
+    <item>
+      <title>Version 1.5.11</title>
+      <sparkle:version>42</sparkle:version>
+      <sparkle:shortVersionString>1.5.11</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Sat, 21 Feb 2026 16:48:47 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.5.11/Dicta-1.5.11.dmg"
+        sparkle:edSignature="4nwSWhzRobmFiBMlUGUmBgDbU18V59Y/cVvbhtJhJwm/yS/OtGsCZYi2H1pE6QOIhh6cJ6s2CoSkNTyDCa1dBA=="
+        length="11348305"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.5.11.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.5.10 (build 41) - Fix: hide "Already subscribed? Sign in" when user is already authenticated -->
     <item>
       <title>Version 1.5.10</title>
