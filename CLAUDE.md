@@ -33,7 +33,7 @@ Dicta.app -> GET appcast.xml -> compare build/version -> show release notes -> d
 
 ## Adding a New Release
 
-Use `/release-update` in `/Users/piotrromanski/Developer/Dicta`.
+Use `/release-update` in `/Users/piotrromanski/Developer/dicta/app`.
 
 That workflow handles:
 - build + notarization + Sparkle signature
@@ -69,8 +69,8 @@ curl -s https://downloads.appdicta.com/dicta/appcast.xml | head -40
 
 ## Related Projects
 
-- Dicta app: `/Users/piotrromanski/Developer/Dicta`
-- Website: `/Users/piotrromanski/Developer/appdicta.com`
+- Dicta app: `/Users/piotrromanski/Developer/dicta/app`
+- Website: `/Users/piotrromanski/Developer/dicta/web`
 - Ecosystem context: `/Users/piotrromanski/Developer/CLAUDE.md`
 
 ## Owner
