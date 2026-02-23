@@ -5,6 +5,21 @@
     <link>https://downloads.appdicta.com/dicta/appcast.xml</link>
     <description>Dicta - Voice input for people who think faster than they type</description>
     <language>en</language>
+    <!-- v1.5.12 (build 43) - Fix: trial-ended app still active due to grace period bug; fix: invisible import field placeholder in dark mode -->
+    <item>
+      <title>Version 1.5.12</title>
+      <sparkle:version>43</sparkle:version>
+      <sparkle:shortVersionString>1.5.12</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <pubDate>Mon, 23 Feb 2026 16:32:57 +0100</pubDate>
+      <enclosure
+        url="https://downloads.appdicta.com/dicta/releases/1.5.12/Dicta-1.5.12.dmg"
+        sparkle:edSignature="TE+3f5qJR6U7ekLYqHyOc1a/YGd4iQnTKaBpc96z0ZlOazszcI61cqrD8AbGBmCxWIoGx5+ax+H3VYZYBjd0Dw=="
+        length="11332555"
+        type="application/octet-stream"/>
+      <sparkle:releaseNotesLink>https://downloads.appdicta.com/dicta/release-notes/1.5.12.html</sparkle:releaseNotesLink>
+    </item>
+
     <!-- v1.5.11 (build 42) - QTA format support; fix onboarding mic monitoring race; defensive recorder cleanup -->
     <item>
       <title>Version 1.5.11</title>
